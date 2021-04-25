@@ -19,9 +19,15 @@ body {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0 10px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    color: $primary-black;
+    font-weight: 700;
 }
 
 // ======= header
@@ -34,7 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 0;    
     &-logo-link {
         text-decoration: none;
     }
@@ -72,4 +78,67 @@ header {
         background-color: $primary;
         border-radius: 5px;
     }
+}
+
+// ====banner 
+
+.banner{
+    &-section{
+        display: flex;
+        overflow: hidden;
+        background-color: #FFF5F5;
+        padding-bottom: 25px;                        
+    }
+    &-container {        
+        display: flex;
+        align-items: center;
+    }
+    &-content{
+        flex: 0 0 100%;
+        display: flex;        
+    }
+    &-item{
+        width: 50%;                     
+    }
+    &-title{
+        font-size: 69px;
+        font-weight: 700;
+        line-height: 83px;
+        margin-bottom: 25px;
+        &__blue{
+            color: $primary;
+        }
+    }
+    &-text{
+        font-size: 18px;
+        line-height: 29px;
+        margin-bottom: 35px;
+    }
+    &-btn{
+        display: flex;
+        align-items: center;
+        cursor: pointer;        
+        &__text{
+            font-size: 18px;
+            line-height: 29px;
+            font-weight: 500;
+            color: $primary-black;
+        }
+        &__img{
+            margin-right: 25px;
+        }
+    }
+    &-img{
+        flex: 0 0 50%;
+        transform: translateX(-100%);
+    }
+    &-img__img{
+        max-width: 100%;
+    }
+    &-border-bottom {
+        width: 100%;
+        height: 46px;
+        background-image: url(../img/banner-border-botom.svg);
+        margin-bottom: 44px;
+    }   
 }
