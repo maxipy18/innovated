@@ -27,7 +27,6 @@ body {
 .title {
     font-family: 'Lato', sans-serif;
     color: $primary-black;
-    font-weight: 700;
 }
 
 // ======= header
@@ -139,6 +138,155 @@ header {
         width: 100%;
         height: 46px;
         background-image: url(../img/banner-border-botom.svg);
-        margin-bottom: 44px;
+        margin-bottom: 96px;
     }   
 }
+
+// ===== progress
+
+.progress {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+    &-title{
+        text-align: center;
+        font-size: 43px;
+        line-height: 56px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    } 
+    &-subtitle{
+        text-align: center;
+        max-width: 806px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        font-size: 18px;
+        line-height: 30px;
+
+    }   
+    &-img{
+        flex: 0 0 50%;
+        position: relative;
+        img {                        
+            position: absolute;
+            top: 0;
+            right: 0;            
+        }
+    }
+    &-content {
+        flex: 0 0 50%;        
+        padding-left: 97px;
+        padding-right: 66px;
+        display: flex;
+        align-items: center;        
+    }
+    &-item{
+        width: 100%;
+    }
+    &-card{
+        margin-bottom: 45px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &-header{            
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+            line-height: 37px; 
+            margin-bottom: 28px;
+            &.red{
+                width: 80%;
+            }
+            &.orange{
+                width: 90%;
+            }  
+            &.green{
+                width: 75%;
+            } 
+            &.blue{
+                width: 80%;
+            }        
+            &__percent-red{
+                color: #E41A1A;
+            }
+            &__percent-orange{
+                color: #DA5A12;
+            }
+            &__percent-green{
+                color: #5BBB10;
+            }
+            &__percent-blue{
+                color: #15C1CC;
+            }
+        }
+        &-progressbar__red{
+            width: 100%;
+            height: 15px;            
+            border-radius: 50px;            
+            background-color: rgba(228, 26, 26, 0.1); 
+            position: relative;
+            &-percent{
+                position: absolute;                
+                top: 0;
+                left: 0;
+                width: 75%;
+                height: 15px;            
+                border-radius: 50px;
+                background-color: #E41A1A;
+                opacity: 1; 
+            }          
+        }
+        &-progressbar__orange{
+            width: 100%;
+            height: 15px;            
+            border-radius: 50px;            
+            background-color: rgba(218, 90, 18, 0.1); 
+            position: relative;
+            &-percent{
+                position: absolute;                
+                top: 0;
+                left: 0;
+                width: 85%;
+                height: 15px;            
+                border-radius: 50px;
+                background-color: #DA5A12;
+                opacity: 1; 
+            }          
+        }
+        &-progressbar__green{
+            width: 100%;
+            height: 15px;            
+            border-radius: 50px;            
+            background-color: #5BBB1010; 
+            position: relative;
+            &-percent{
+                position: absolute;                
+                top: 0;
+                left: 0;
+                width: 70%;
+                height: 15px;            
+                border-radius: 50px;
+                background-color: #5BBB10;
+                opacity: 1; 
+            }          
+        }
+        &-progressbar__blue{
+            width: 100%;
+            height: 15px;            
+            border-radius: 50px;            
+            background-color: #15C1CC10; 
+            position: relative;
+            &-percent{
+                position: absolute;                
+                top: 0;
+                left: 0;
+                width: 75%;
+                height: 15px;            
+                border-radius: 50px;
+                background-color: #15C1CC;
+                opacity: 1; 
+            }          
+        }
+    }
+}
+

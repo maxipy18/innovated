@@ -20,7 +20,6 @@ body {
 .title {
   font-family: 'Lato', sans-serif;
   color: #050C26;
-  font-weight: 700;
 }
 
 header {
@@ -173,6 +172,191 @@ header {
   width: 100%;
   height: 46px;
   background-image: url(../img/banner-border-botom.svg);
-  margin-bottom: 44px;
+  margin-bottom: 96px;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 140px;
+}
+
+.progress-title {
+  text-align: center;
+  font-size: 43px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.progress-subtitle {
+  text-align: center;
+  max-width: 806px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.progress-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+}
+
+.progress-img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.progress-content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-left: 97px;
+  padding-right: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-item {
+  width: 100%;
+}
+
+.progress-card {
+  margin-bottom: 45px;
+}
+
+.progress-card:last-child {
+  margin-bottom: 0;
+}
+
+.progress-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+  line-height: 37px;
+  margin-bottom: 28px;
+}
+
+.progress-card-header.red {
+  width: 80%;
+}
+
+.progress-card-header.orange {
+  width: 90%;
+}
+
+.progress-card-header.green {
+  width: 75%;
+}
+
+.progress-card-header.blue {
+  width: 80%;
+}
+
+.progress-card-header__percent-red {
+  color: #E41A1A;
+}
+
+.progress-card-header__percent-orange {
+  color: #DA5A12;
+}
+
+.progress-card-header__percent-green {
+  color: #5BBB10;
+}
+
+.progress-card-header__percent-blue {
+  color: #15C1CC;
+}
+
+.progress-card-progressbar__red {
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgba(228, 26, 26, 0.1);
+  position: relative;
+}
+
+.progress-card-progressbar__red-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #E41A1A;
+  opacity: 1;
+}
+
+.progress-card-progressbar__orange {
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgba(218, 90, 18, 0.1);
+  position: relative;
+}
+
+.progress-card-progressbar__orange-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #DA5A12;
+  opacity: 1;
+}
+
+.progress-card-progressbar__green {
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #5BBB1010;
+  position: relative;
+}
+
+.progress-card-progressbar__green-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #5BBB10;
+  opacity: 1;
+}
+
+.progress-card-progressbar__blue {
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #15C1CC10;
+  position: relative;
+}
+
+.progress-card-progressbar__blue-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #15C1CC;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
