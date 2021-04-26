@@ -162,7 +162,6 @@ header {
         margin-bottom: 70px;
         font-size: 18px;
         line-height: 30px;
-
     }   
     &-img{
         flex: 0 0 50%;
@@ -308,7 +307,6 @@ header {
         margin-bottom: 70px;
         font-size: 18px;
         line-height: 30px;
-
     }
     &-card{
         flex: 0 0 24%;
@@ -339,4 +337,127 @@ header {
             border-radius: 5px;
         }       
     }    
+}
+
+
+// ===== services
+
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    &-title{
+        max-width: 492px;        
+        font-size: 43px;
+        line-height: 56px;
+        font-weight: 700;
+        margin-bottom: 25px;        
+    } 
+    &-subtitle{        
+        max-width: 604px;        
+        margin-bottom: 70px;
+        font-size: 18px;
+        line-height: 30px;
+    } 
+    &-card{
+        flex: 0 0 32%;
+        text-align: center;
+        padding: 40px;
+        border-radius: 10px;
+        margin-bottom: 60px;
+        position: relative;               
+        &.card-01{
+            background-image: url(../img/serv-img-1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        } 
+        &.card-02{
+            background-image: url(../img/serv-img-2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.card-03{
+            background-image: url(../img/serv-img-3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.card-04{
+            background-image: url(../img/serv-img-4.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.card-05{
+            background-image: url(../img/serv-img-5.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.card-06{
+            background-image: url(../img/serv-img-6.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }       
+        &:hover &-overlay{
+            opacity: 0;
+        }                
+        &-overlay{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            backdrop-filter: blur(104px);
+            padding: 40px;
+            transition: 0.3s;
+            &-content{            
+                background: #F3F3F3;
+                border-radius: 10px;                
+                padding: 62px 20px;
+            }
+            &__title{                
+                font-size: 25px;
+                line-height: 38px;
+                margin-bottom: 20px;
+            }
+            &__text{
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 40px;
+            }
+            &__link{
+                display: block;
+                width: 60px;
+                height: 60px;
+                margin: 0 auto;
+                background-image: url(../img/serv-arrow-black.svg);
+            }           
+        }
+        &-content{            
+            background: linear-gradient(180deg, #D93059 0%, #D95B7A 100%);
+            border-radius: 10px;
+            color: $primary-white;
+            padding: 62px 20px;
+        }
+        &__title{
+            color: $primary-white;
+            font-size: 25px;
+            line-height: 38px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+        &__link{
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            background-image: url(../img/serv-arrow-blue.svg);
+        }
+    }
 }
