@@ -461,3 +461,140 @@ header {
         }
     }
 }
+
+// ====== offers
+
+
+.offers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+    &-header{
+        text-align: center;
+    }
+    &-title{
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 49px;        
+        margin-bottom: 40px;
+    }
+    &-subtitle{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;        
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &-control{
+        padding: 10px;        
+        display: inline-block;
+        border: 1px solid #1B45DA;
+        border-radius: 5px;        
+        margin-bottom: 60px;
+        &-btn{
+            font-size: 18px;
+            line-height: 29px;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 20px;
+            }
+            &.active{
+                color: $primary-white;
+                background: $primary;
+            }
+        }
+    }
+    &-card{
+        flex: 0 0 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0px 4px 30px rgba(153, 153, 153, 0.14);
+        text-align: center;        
+        &-header{
+            padding: 46px 0;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.14);
+            overflow: hidden;
+            position: relative;
+        }
+        &-content{
+            padding: 40px 0;
+        }
+        &__title{
+            font-size: 25px;
+            line-height: 38px;            
+            &.basic{
+                text-transform: uppercase;
+            }
+        }
+        &__price{
+            font-size: 18px;
+            line-height: 29px;
+            color: $primary-black;
+            margin-bottom: 15px;
+            &-value{
+                font-size: 35px;
+                font-weight: 700;
+                line-height: 49px;
+                font-family: 'Lato', sans-serif;
+            }
+        }
+        &__period{
+            font-size: 18px;
+            line-height: 29px;
+            margin-bottom: 40px;
+        }
+        &__space, &__mail,
+        &__domains, &__license{
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        &__license{
+            margin-bottom: 30px;
+        }
+        &__link{            
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 37px;
+            font-family: 'Lato', sans-serif;
+            color: $primary;
+            padding: 15px 30px;
+            border: 1px solid $primary;
+            border-radius: 5px;
+        }
+        &:hover &-header{
+            background: linear-gradient(180deg, #D95374 0%, #D32852 100%);
+            border-bottom: 1px solid #D32852;
+            border-radius: 10px 10px 0px 0px;            
+        }
+        &:hover &__title, &:hover &__price{
+            color: $primary-white;
+        }
+        &:hover &-content{
+            background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
+            color: $primary-white;
+            border-radius: 0 0 10px 10px;
+        } 
+        &:hover &__link{
+            color: $primary-white;
+            background-color: $primary;
+        } 
+        &.business &-header::before{
+            content: "";
+            position: absolute;
+            top: -14px;
+            left: -13px;            
+            background-image: url(../img/best-deal.svg);
+            width: 67px;
+            height: 67px;
+        }      
+    }
+}
