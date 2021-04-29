@@ -1,4 +1,6 @@
-   
+$(document).ready(function(){
+    
+
     const progressImg = document.querySelector('.progress-img');
     const offersControlBtn = document.querySelectorAll('.offers-control-btn');
     const offersCardPriceValue = document.querySelectorAll('.offers-card__price-value');
@@ -60,6 +62,25 @@
            
         });
     });
+
+
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,        
+      });
+
+
+
+  });
+
+
+
+
+    
 
 
 

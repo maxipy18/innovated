@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -32,6 +32,8 @@ body {
   background-image: url(../img/serv-arrow-black.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-filter: drop-shadow(0 0 10px #3988FF);
+          filter: drop-shadow(0 0 10px #3988FF);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 10;
@@ -747,5 +749,115 @@ header {
   background-image: url(../img/best-deal.svg);
   width: 67px;
   height: 67px;
+}
+
+.sliders-title {
+  text-align: center;
+  font-size: 43px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.sliders-subtitle {
+  max-width: 715px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 70px;
+}
+
+.sliders-viewport {
+  width: 100%;
+  border: 1px solid #050C2610;
+  border-radius: 10px;
+  background-image: url(../img/slider-bg.png);
+  background-repeat: no-repeat;
+  padding: 46px 0px;
+  margin-bottom: 140px;
+}
+
+.slider-item {
+  margin-bottom: 50px;
+  padding: 0 69px;
+}
+
+.slider-card-text {
+  padding-left: 46px;
+  padding-top: 14px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.slider-card-text::before {
+  content: "";
+  width: 42px;
+  height: 35px;
+  display: block;
+  background-image: url(../img/marks.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.slider-card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-card-user__photo {
+  width: 90px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.slider-card-user__user-name {
+  font-size: 20px;
+  color: #050C26;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.slider-card-user__user-position {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.slick-dots li {
+  width: 20px;
+  height: 11px;
+  border-radius: 20px;
+  background-color: #3988FF;
+  opacity: 0.1;
+  margin-right: 15px;
+}
+
+.slick-dots li button::before {
+  content: none;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots .slick-active {
+  width: 40px;
+  height: 11px;
+  border-radius: 20px;
+  background-color: #3988FF;
+  opacity: 1;
+}
+
+.slick-current .slider-card-text {
+  color: #050C26;
 }
 /*# sourceMappingURL=style.css.map */
